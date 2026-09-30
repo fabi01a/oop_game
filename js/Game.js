@@ -5,7 +5,13 @@
 class Game {
     constructor() {
         this.missed = 0;
-        this.phrases = [];
+        this.phrases = [
+            new Phrase("All that glitters is not gold"), 
+            new Phrase("A picture is worth a thousand words"),
+            new Phrase("Stay hungy, stay foolish"), 
+            new Phrase("Less is more"), 
+            new Phrase("This too shall pass")
+        ],
         this.activePhrase = null;
     }
 };
