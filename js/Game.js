@@ -18,4 +18,10 @@ class Game {
         const randomIndex = Math.floor(Math.random() * this.phrases.length);
         return this.phrases[randomIndex];
     }
+    startGame() {
+        const overlay = document.querySelector('#overlay');
+        overlay.style.display = 'none';
+        this.activePhrase = this.getRandomPhrase();
+        this.activePhrase.addPhraseToDisplay();
+    }
 };
