@@ -6,4 +6,18 @@ class Phrase {
     constructor(phrase) {
         this.phrase = phrase.toLowerCase();
     }
+    addPhraseToDisplay() {
+        const phraseUl = document.querySelector('#phrase ul')
+        for (let i = 0; i < this.phrase.length;i++) {
+            const newLi = document.createElement('li');
+            if (this.phrase[i] === " "){
+                newLi.classList.add('space');
+                newLi.textContent = this.phrase[i];
+            } else {
+                newLi.classList.add('hide', 'letter', this.phrase[i]);
+                newLi.textContent = this.phrase[i];
+                phraseUl.appendChild(newLi);
+            }
+        }
+    }
 }
