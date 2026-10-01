@@ -12,6 +12,7 @@ class Phrase {
 
         for (let i = 0; i < this.phrase.length;i++) {
             const newLi = document.createElement('li');
+            
             if (this.phrase[i] === " "){
                 newLi.classList.add('space');
                 newLi.textContent = this.phrase[i];
