@@ -8,7 +8,7 @@ class Game {
         this.phrases = [
             new Phrase("All that glitters is not gold"), 
             new Phrase("A picture is worth a thousand words"),
-            new Phrase("Stay hungry, stay foolish"), 
+            new Phrase("Stay hungry stay foolish"), 
             new Phrase("Less is more"), 
             new Phrase("This too shall pass")
         ],
@@ -65,6 +65,11 @@ class Game {
         if (this.activePhrase.checkLetter(letter)) {
             this.activePhrase.showMatchedLetter(letter);
             button.classList.add('chosen');
+            
+            if (this.checkForWin()) {
+                this.gameOver(true);
+            }
+        
         } else {
             this.removeLife();
             button.classList.add('wrong');

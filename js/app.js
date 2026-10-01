@@ -10,3 +10,13 @@ startButton.addEventListener('click', event => {
     game = new Game();
     game.startGame();
 });
+
+const keyboard = document.getElementById('qwerty');
+keyboard.addEventListener('click', event => {
+    const button = event.target;
+    console.log(button);
+
+    if (button.classList.contains('key')) {
+        game.handleInteraction(button);
+    }
+})
