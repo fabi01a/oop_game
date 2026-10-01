@@ -8,7 +8,7 @@ class Game {
         this.phrases = [
             new Phrase("All that glitters is not gold"), 
             new Phrase("A picture is worth a thousand words"),
-            new Phrase("Stay hungy, stay foolish"), 
+            new Phrase("Stay hungry, stay foolish"), 
             new Phrase("Less is more"), 
             new Phrase("This too shall pass")
         ],
