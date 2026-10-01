@@ -6,6 +6,7 @@ class Phrase {
     constructor(phrase) {
         this.phrase = phrase.toLowerCase();
     }
+
     addPhraseToDisplay() {
         const phraseUl = document.querySelector('#phrase ul')
         for (let i = 0; i < this.phrase.length;i++) {
@@ -16,8 +17,21 @@ class Phrase {
             } else {
                 newLi.classList.add('hide', 'letter', this.phrase[i]);
                 newLi.textContent = this.phrase[i];
-                phraseUl.appendChild(newLi);
             }
+            phraseUl.appendChild(newLi);
+        }
+    }
+
+    checkLetter(letter) {
+        return this.phrase.includes(letter);
+    }
+
+    showMatchedLetter(letter) {
+        const matchedLetters = document.querySelectorAll(`.${letter}`);
+        for (let i = 0; i < matchedLetters.length; i++) {
+            matchedLetters[i].classList.remove('hide');
+            matchedLetters[i].classList.add('show');
+
         }
     }
 }
