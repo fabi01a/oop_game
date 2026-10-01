@@ -12,6 +12,7 @@ class Game {
             new Phrase("Less is more"), 
             new Phrase("This too shall pass")
         ],
+
         this.activePhrase = null;
     }
 
@@ -51,10 +52,11 @@ class Game {
 
         if (gameWon) {
             overlay.classList.add('win');
-            overlay.textContent = 'You Won!';
+            message.textContent = 'You Won!';
+        
         } else {
             overlay.classList.add('lose');
-            overlay.textContent = 'Better Luck Next Time!';
+            message.textContent = 'Better Luck Next Time!';
         }
     }
 

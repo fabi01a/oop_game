@@ -8,7 +8,8 @@ class Phrase {
     }
 
     addPhraseToDisplay() {
-        const phraseUl = document.querySelector('#phrase ul')
+        const phraseUl = document.querySelector('#phrase ul');
+
         for (let i = 0; i < this.phrase.length;i++) {
             const newLi = document.createElement('li');
             if (this.phrase[i] === " "){
