@@ -4,7 +4,7 @@ A player has 5 tries to guess the phrase by selecting individual letters from an
 phrase before they run out of attempts?
 
 
-## Demo
+## Video Demo
 https://github.com/user-attachments/assets/2e3fd31f-38af-4ef0-b519-a9520a5a8d0b
 
 ## Technologies
