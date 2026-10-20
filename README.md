@@ -8,7 +8,7 @@ phrase before they run out of attempts?
 https://github.com/user-attachments/assets/2e3fd31f-38af-4ef0-b519-a9520a5a8d0b
 
 ## Technologies
--JavaScript
+JavaScript
 
 ## Features
 - **Interactive Word-Guessing Game:** Players guess letters to reveal a hidden phrase.
